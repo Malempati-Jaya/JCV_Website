@@ -1,0 +1,23 @@
+{
+  "name": "jcv-solar-careers",
+  "version": "1.0.0",
+  "description": "JCV Solar Careers Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo 'Build complete'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "solar",
+    "careers",
+    "jobs",
+    "renewable-energy"
+  ],
+  "author": "JCV Solar",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

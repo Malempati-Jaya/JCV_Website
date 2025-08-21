@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JCV Solar</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                 <h2><img src="/images/JCV.jpg" alt="JCV Solar Logo" style="vertical-align: middle; width: 60px; height: 50px;">JCV PHOTOVOLTAIC PVT LTD</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/aboutus.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/why-choose-us.html" class="nav-link">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Contact JCV Solar</h1>
+            <p>We’re here to answer your questions and help you go solar</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let’s Get Started</h2>
+                    <p>Whether you’re ready for a free quote or just have questions about solar energy, our team is here to help. Reach out today!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <span>Mon-Fri, 9AM-6PM</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@jcvsolar.com</p>
+                                <span>We respond within 24 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>123 Solar St, Energy City, EC 12345</p>
+                                <span>Visit by appointment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="office-hours">
+                        <h3>Office Hours</h3>
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm" method="POST" action="/contact">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    Subscribe to our newsletter
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <p class="form-disclaimer">
+                                By submitting this form, you agree to our 
+                                <a href="#">Privacy Policy</a> and 
+                                <a href="#">Terms of Service</a>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>123 Solar St, Energy City, EC 12345</p>
+                    <p>Schedule a visit to learn more about our solar solutions!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about solar energy</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much can I save with solar?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Savings depend on your electricity usage, system size, and location. On average, our customers save 50-80% on their electricity bills annually. Use our Solar Savings Calculator for a personalized estimate.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the installation process like?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our process includes a free consultation, custom design, permitting, professional installation, and system activation. We handle all details to ensure a seamless experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer financing options?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible financing plans, including zero-down options and low-interest loans, to make solar accessible for everyone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What warranties do you provide?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 25-year warranty on solar panels and inverters, plus a 10-year workmanship warranty, ensuring peace of mind for your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-solar-panel"></i> JCV Solar</h3>
+                    <p>Leading provider of solar energy solutions, committed to a sustainable future through innovative solar technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Solar</a></li>
+                        <li><a href="#">Commercial Solar</a></li>
+                        <li><a href="#">Energy Storage</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/aboutus.html">About Us</a></li>
+                        <li><a href="/why-choose-us.html">Why Choose Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@jcvsolar.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Solar St, Energy City, EC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 JCV Solar. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/javascript.js"></script>
+</body>
+</html>

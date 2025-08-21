@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCV Solar - Leading Solar Panel Solutions</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><img src="/images/JCV.jpg" alt="JCV Solar Logo" style="vertical-align: middle; width: 60px; height: 50px;">JCV PHOTOVOLTAIC PVT LTD</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/aboutus.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/why-choose-us.html" class="nav-link">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link">contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Power Your Future with Solar Energy</h1>
+            <p class="hero-subtitle">JCV Solar provides cutting-edge solar panel solutions for residential and commercial properties. Join thousands of satisfied customers who have made the switch to clean, renewable energy.</p>
+            <div class="hero-buttons">
+                <a href="/contact.html" class="btn btn-primary">Get Free Quote</a>
+                <a href="/aboutus.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="5000">0</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">MW Installed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Solar Solutions</h2>
+                <p>Comprehensive solar energy systems tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Solar</h3>
+                    <p>Custom solar panel installations for homes, reducing your electricity bills and carbon footprint.</p>
+                    <ul>
+                        <li>Free energy consultation</li>
+                        <li>Custom system design</li>
+                        <li>Professional installation</li>
+                        <li>25-year warranty</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Solar</h3>
+                    <p>Large-scale solar solutions for businesses, warehouses, and industrial facilities.</p>
+                    <ul>
+                        <li>ROI analysis</li>
+                        <li>Scalable systems</li>
+                        <li>Tax incentive guidance</li>
+                        <li>Maintenance support</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Energy Storage</h3>
+                    <p>Advanced battery storage systems to maximize your solar investment and energy independence.</p>
+                    <ul>
+                        <li>Backup power solutions</li>
+                        <li>Peak shaving capabilities</li>
+                        <li>Smart energy management</li>
+                        <li>Grid-tie functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Calculator -->
+    <section class="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solar Savings Calculator</h2>
+                <p>Estimate your potential savings with our interactive calculator</p>
+            </div>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="monthlyBill">Monthly Electricity Bill ($)</label>
+                        <input type="number" id="monthlyBill" placeholder="200" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="roofSize">Roof Size (sq ft)</label>
+                        <input type="number" id="roofSize" placeholder="1500" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location">
+                            <option value="high">High Sun Exposure</option>
+                            <option value="medium">Medium Sun Exposure</option>
+                            <option value="low">Low Sun Exposure</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="calculateSavings()">Calculate Savings</button>
+                </div>
+               <div class="calculator-results" id="calculatorResults">
+    <div class="result-item">
+        <h3>Annual Savings</h3>
+        <div class="result-value" id="annualSavings">₹0</div>
+    </div>
+    <div class="result-item">
+        <h3>25-Year Savings</h3>
+        <div class="result-value" id="lifetimeSavings">₹0</div>
+    </div>
+    <div class="result-item">
+        <h3>System Size</h3>
+        <div class="result-value" id="systemSize">0 kW</div>
+    </div>
+    <div class="result-item">
+        <h3>Monthly Units Generated</h3>
+        <div class="result-value" id="unitsGenerated">0 kWh</div>
+    </div>
+    <div class="result-item">
+        <h3>Current Output</h3>
+        <div class="result-value" id="currentOutput">0 A</div>
+    </div>
+</div>
+    </section>
+
+    <!-- Gallery Section -->
+
+     <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="" alt="Gallery Image">
+        <span class="close-btn">×</span>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Switch to Solar?</h2>
+                <p>Join thousands of homeowners and businesses who have already made the smart choice for clean, renewable energy.</p>
+                <a href="/contact.html" class="btn btn-light">Get Your Free Quote Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-solar-panel"></i> JCV Solar</h3>
+                    <p>Leading provider of solar energy solutions, committed to a sustainable future through innovative solar technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Solar</a></li>
+                        <li><a href="#">Commercial Solar</a></li>
+                        <li><a href="#">Energy Storage</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/aboutus.html">About Us</a></li>
+                        <li><a href="/why-choose-us.html">Why Choose Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@jcvsolar.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Solar St, Energy City, EC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 JCV Solar. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/javascript.js"></script>
+    <script>
+        // Debug script to check resource loading
+        console.log('CSS loaded:', document.querySelector('link[href="/css/style.css"]').sheet ? 'Yes' : 'No');
+        console.log('JS loaded:', typeof window.calculateSavings === 'function' ? 'Yes' : 'No');
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded, checking image paths...');
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('error', () => console.log(`Image load failed for ${img.src}`));
+            });
+        });
+    </script>
+</body>
+</html>
